@@ -54,3 +54,6 @@ EOF
 
 # Paso 4: Ejecutar el comando para fetch-config del agente CloudWatch
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
+
+# Paso 5: Ejecutar el comando para verificar el agente CloudWatch
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -m ec2 -a status
